@@ -21,6 +21,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif}
 html {
   scroll-behavior: smooth;
 }
+a:hover {
+  text-decoration: none;
+}
+.zoom:hover {
+  transform: scale(1.5); 
+}
+.image:hover{
+  transform: scale(1.1);
+}
+.image {
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.792);
+    border-radius: .5rem;
+    overflow: hidden;
+}
 </style>
 </head>
 <body class="w3-black">
@@ -63,7 +77,7 @@ html {
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Jun Wei.</h1>
     <p>Currently studying in SMJK Chung Hwa, Klang</p>
-    <img src="profile.png" alt="Jun Wei" class="w3-image" width="700" height="1000">
+    <img src="profile.png" alt="Jun Wei" class="w3-image zoom" width="700" height="1000">
   </header>
 
   <!-- About Section -->
@@ -101,54 +115,54 @@ html {
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-row-padding" style="margin:0 -16px" >
       <div class="w3-half">
         <!--mesac-->
         <a href="NG JUN WEI - SMJK CHUNG HWA, KLANG.pdf">
-          <img src="mesac2022.png" style="width:100%">
+          <img src="mesac2022.png" style="width:100%" class="image">
           </a>
         <!--mdec-->
         <a href="NG JUN WEI DCS Cert.pdf">
-        <img src="mdec.png" style="width:100%">
+        <img src="mdec.png" style="width:100%" class="image">
         </a>
         <!--math-->
         <a href="MA995485 NG JUN WEI CJR2023 CERT.pdf">
-        <img src="Chen Jingrun's cup.png" style="width:100%">
+        <img src="Chen Jingrun's cup.png" style="width:100%" class="image">
         </a>
         <!--scout-->
         <a href="eCerT.my-070119140371.pdf">
-        <img src="Pengakap.png" style="width:100%">
+        <img src="Pengakap.png" style="width:100%" class="image">
         </a>
         <!--ai untuk rakyat-->
         <a href="Ng Jun Wei_AI_AWARE_BADGE.png">
-          <img src="Ng Jun Wei_AI_AWARE_BADGE.png" style="width:100%">
+          <img src="Ng Jun Wei_AI_AWARE_BADGE.png" style="width:100%" class="image">
         </a>
       </div>
 
       <div class="w3-half">
         <!--keahlian-->
         <a href="070119140371.pdf">
-          <img src="keahlian.png" style="width:100%">
+          <img src="keahlian.png" style="width:100%" class="image">
         </a>
         <!--abrsm grade1-->
         <a href="Jun WeiNgPianoPerformance Grade 1.pdf">
-          <img src="abrsm g1.png" style="width:100%">
+          <img src="abrsm g1.png" style="width:100%" class="image">
         </a>
         <!--abrsm grade 3-->
         <a href="MarkForm_Jun WeiNgPianoPerformance Grade 3.pdf">
-          <img src="abrsm g3.png" style="width:100%">
+          <img src="abrsm g3.png" style="width:100%" class="image">
         </a>
         <!--rac state lvl-->
         <a href="State Level rero_micro Robot (Secondary Category) _ NG JUN WEI.pdf">
-          <img src="rac state lvl.png" style="width:100%">
+          <img src="rac state lvl.png" style="width:100%" class="image">
         </a>
         <!--rac national lvl-->
         <a href="National Level rero_micro Robot (Secondary Category) _ NG JUN WEI.pdf">
-          <img src="rac national lvl.png" style="width:100%">
+          <img src="rac national lvl.png" style="width:100%" class="image">
         </a>
         <!--ai untuk rakyat-->
         <a href="Ng Jun Wei_AI_APPRECIATE_BADGE.png">
-          <img src="Ng Jun Wei_AI_APPRECIATE_BADGE.png" style="width:100%">
+          <img src="Ng Jun Wei_AI_APPRECIATE_BADGE.png" style="width:100%" class="image">
         </a> 
       </div>
     <!-- End photo grid -->
@@ -170,13 +184,13 @@ html {
 
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfLm3LyUmGJYb-IcmqVgaIMqU6w9GsW47ij49ddxYKujPLUbw/formResponse" target="_top" id="form">
 
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="entry.643833733"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="entry.1345350207"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="entry.1249781172"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="entry.780702097"></p>
+      <p><input class="w3-input w3-padding-16 w3-round-large" type="text" placeholder="Name" required name="entry.643833733"></p>
+      <p><input class="w3-input w3-padding-16 w3-round-large" type="text" placeholder="Subject" required name="entry.1345350207"></p>
+      <p><input class="w3-input w3-padding-16 w3-round-large" type="text" placeholder="Email" required name="entry.1249781172"></p>
+      <p><input class="w3-input w3-padding-16 w3-round-large" type="text" placeholder="Message" required name="entry.780702097"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane w3-round"></i> SEND MESSAGE
         </button>
       </p>
     </form>
